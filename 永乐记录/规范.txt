@@ -1,0 +1,6 @@
+1. 所有的页面在views下创建   例如: views->home->self-->sele.vue
+2.文件夹尽量一个单词，具体文件多个单词，命名使用camelcase
+3.不要动public文件夹，静态资源放在assets文件夹下
+4.变量，className命名: 自己文件+语义化的名字
+5.每天来了先pull，晚上push了，上传的时候，先git status ，如果发现一直报红，
+问问别人，别把代码覆盖了，push后，说一声

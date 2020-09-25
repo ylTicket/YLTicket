@@ -1,14 +1,14 @@
 <template>
 <div class='container'>
-    <ticket-index></ticket-index>
+    <router-view></router-view>
 </div>
 </template>
 
 <script>
-import ticketIndex from './views/home/index/ticketIndex'
+
 export default {
     components: {
-        ticketIndex
+        
     }
 }
 </script>

@@ -1,74 +1,197 @@
 <template>
-<div class='container'>
-    <header>
-        <div class='header-left'>
-            <span>北京</span>
-            <i class='city-entry-arrow'></i>
-        </div>
-        <div class='header-right'>
-            <input type="text">
-            <i></i>
-        </div>
-    </header>
     <main>
-        <nav>导航栏</nav>
+        <nav>
+            <p>
+                <a href="javascript:void()">
+                    <i></i>
+                    演唱会
+                </a>
+                <a href="javascript:void()">
+                    <i></i>
+                    话剧舞台剧
+                </a>
+                <a href="javascript:void()">
+                    <i></i>
+                    体育赛事
+                </a>
+                <a href="javascript:void()">
+                    <i></i>
+                    儿童亲子
+                </a>            
+            </p>
+            <p>
+                 <a href="javascript:void()">
+                     <i></i>
+                     全部分类
+                </a>
+                <a href="javascript:void()">
+                    <i></i>
+                    活动
+                </a>
+                <a href="javascript:void()">
+                    <i></i>
+                    永乐说
+                </a>
+                <a href="javascript:void()">
+                    <i></i>
+                    我的
+                </a>  
+            </p>
+        </nav>
+        <h3>
+            <span>推荐</span>
+            <span>场馆</span>
+        </h3>
         <ul>
-            <li>list</li>
+            <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/08/AfterTreatment/1599561731823_d5v6-0.jpg" alt="">
+                     <b class='dec'>2020 SESC中国综艺嘉年华"闪光派对"</b>
+                    <span class='date'>10.17 ~ 10.18</span>
+                    <span class='price'>
+                        <b>￥ 100</b> 起
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void()">
+                    <img src='//static.228.cn/upload/2020/09/01/AfterTreatment/1598930456849_o9v6-0.jpg' alt="">
+                     <b class='dec'>百变魔逗秀</b>
+                    <span class='date'>10.16 ~ 10.17</span>
+                    <span class='price'>
+                        <b> ¥ 88</b> 起
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+           <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+             <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+             <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+             <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+             <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+             <li>
+                <a href="javascript:void()">
+                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
+                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
+                    <span class='date'>2020.10.04</span>
+                    <span class='price'>
+                        <b>¥ 120</b> 起
+                    </span>
+                </a>
+            </li>
+
         </ul>
     </main>
-    <footer>
-        <ul>
-            <li>首页</li>
-            <li>分类</li>
-            <li>搜索</li>
-            <li>我的</li>
-        </ul>
-    </footer>
-</div>
 </template>
-
+    
 <script>
 export default {
 
 }
 </script>
 
-<style lang="stylus" scoped>
-.container 
-  height 100%
-  header 
-    height .44rem
-    display flex
-    background linear-gradient(to right, #ff7e6f, #ff2959)
-    box-shadow 0px 2px 6px 0px rgba(255, 37, 68, 0.2)
-    
-    .header-left
-      width .5rem
-      height .4rem
-      padding 0 .15rem 0 .15rem
-      span 
-        line-height .44rem
-        color #fff
-      .city-entry-arrow 
-        border .04rem solid #fff
-        border-left-color transparent
-        border-right-color transparent
-        border-bottom-color transparent
+<style lang="stylus" scoped>  
+  main 
+    nav
+      padding .25rem .2rem
+      background skyblue
+      p
+        display flex
+        a
+          color #000
+          flex 1
+          text-align center
+        i
+          display block
+          width .36rem
+          height .36rem
+    h3
+      padding .2rem .1rem .2rem.15rem
+      span
+        font-size .22rem  
+        padding-right .1rem
+    ul
+      height 100%
+      padding 0 .2rem
+      overflow-y scroll
+      li
         display inline-block
-        margin-left .1rem
-    
-    .header-right
-      flex 1
-      height .34rem
-      line-height .34rem
-      border-radius 1rem
-      margin-top .05rem 
-      overflow hidden
-
-      
-      
-    
-      
+        width 33.33%
+        padding-right .1rem
+        paddign-bottom .12rem
+        a
+          color #000
+          font-size .13rem
+          img 
+            border-radius .1rem
+            width 100%
+            height 1.4rem
+            display block
+          .dec
+            font-weight 800
+            display block
+            height .34rem
+          .date
+            display block
+            color #ccc
+          .price
+            color #ccc
+            b 
+              color red  
       
     
 </style>

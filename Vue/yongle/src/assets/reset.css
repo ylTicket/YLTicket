@@ -89,6 +89,10 @@ optgroup,
 var {
   font-style: normal; }
 
+b {
+  font-weight: normal;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -182,7 +186,8 @@ ins,
 s,
 u,
 del {
-  text-decoration: none; }
+  text-decoration: none; 
+  }
 
 a,
 img {

@@ -43,108 +43,39 @@
             <span>场馆</span>
         </h3>
         <ul>
-            <li>
+            <li v-for='item in recommend' :key="item.ROW_ID">
                 <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/08/AfterTreatment/1599561731823_d5v6-0.jpg" alt="">
-                     <b class='dec'>2020 SESC中国综艺嘉年华"闪光派对"</b>
-                    <span class='date'>10.17 ~ 10.18</span>
+                    <img :src="`//static.228.cn${item.PBIGIMG}`"  alt="">
+                     <b class='dec'>{{item.NAME}}</b>
+                    <span class='date'>{{item.BEGINDATE}}</span>
                     <span class='price'>
-                        <b>￥ 100</b> 起
+                        <b>￥ {{item.MINPRICE}} 起</b>
                     </span>
                 </a>
-            </li>
-            <li>
-                <a href="javascript:void()">
-                    <img src='//static.228.cn/upload/2020/09/01/AfterTreatment/1598930456849_o9v6-0.jpg' alt="">
-                     <b class='dec'>百变魔逗秀</b>
-                    <span class='date'>10.16 ~ 10.17</span>
-                    <span class='price'>
-                        <b> ¥ 88</b> 起
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-           <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-             <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-             <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-             <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-             <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-             <li>
-                <a href="javascript:void()">
-                    <img src="//static.228.cn/upload/2020/09/04/AfterTreatment/1599200301253_i5t4-0.jpg" alt="">
-                    <b class='dec'>非凡丝路音乐会《丝路驼铃》</b>
-                    <span class='date'>2020.10.04</span>
-                    <span class='price'>
-                        <b>¥ 120</b> 起
-                    </span>
-                </a>
-            </li>
-
+            </li> 
         </ul>
     </main>
 </template>
     
 <script>
+import {get} from '../../../utils/http'
 export default {
-
+    data(){
+        return {
+            recommend:[],
+        }
+    },
+    async mounted(){
+        let result=await get({
+            url:'/api/server/content/index.json',
+        })
+        this.recommend=result.data.data.recommendPage.list;
+    }
 }
 </script>
 
 <style lang="stylus" scoped>  
+@import '../../../assets/stylus/ellipsis.styl'
   main 
     nav
       padding .25rem .2rem
@@ -181,6 +112,8 @@ export default {
             width 100%
             height 1.4rem
             display block
+          b 
+            ellipsis()
           .dec
             font-weight 800
             display block

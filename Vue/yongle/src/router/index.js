@@ -16,34 +16,34 @@ const routes=[
             {
                 path:'sy',
                 name:'home',
-                component:()=>import('../views/home/index/TicketIndex')
+                component:()=>import('../views/home/index/ticketIndex')
             },
             {
                 path:'classify',
                 name:'classify',
-                component:()=>import('../views/home/classify/TicketClassify')
+                component:()=>import('../views/home/classify/ticketClassify')
             },
             {
                 path:'search',
                 name:'search',
-                component:()=>import('../views/home/search/TicketSearch')
+                component:()=>import('../views/home/search/ticketSearch')
             },
             {
                 path:'profile',
                 name:'profile',
-                component:()=>import('../views/home/profile/TicketProfile')
+                component:()=>import('../views/home/profile/ticketProfile')
             }
         ]
     },
     {
         path:'/city',
         name:'city',
-        component:()=>import('../views/city/City')
+        component:()=>import(City)
     }
 ]
 
 const router=new VueRouter({
-    mode:'hash',
+    mode:'history',
     routes,
 })
 

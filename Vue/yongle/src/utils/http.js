@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+axios.defaults.timeout=5000;
 const get=({url,params})=>{
     return axios({
         url,

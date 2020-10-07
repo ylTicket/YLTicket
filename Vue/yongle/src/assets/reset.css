@@ -209,10 +209,16 @@ a {
   src: url(//ss.qunarzz.com/yo/font/1.0.3/yofont.woff) format("woff"), url(//ss.qunarzz.com/yo/font/1.0.3/yofont.ttf) format("truetype"); 
 } 
 
- @font-face {
+@font-face {
   font-family: yofont;
   src: url(./icons/footer.woff) format("woff"), url(./icons/footer.ttf) format("truetype"); 
 }
+
+@font-face {
+  font-family: yofont;
+  src: url(./icons/jgq.woff) format("woff"), url(./icons/jgq.ttf) format("truetype"); 
+}
+
 
 .yo-ico {
   font-family: yofont !important;

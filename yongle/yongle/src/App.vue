@@ -2,14 +2,17 @@
 <div class='container'>
     <!-- <router-view></router-view> -->
     <ticketDetail></ticketDetail>
+    <ticketBuy></ticketBuy>
 </div>
 </template>
 
 <script>
 import ticketDetail from './views/detile/ticketDetail'
+import ticketBuy from './views/detile/ticketBuy'
 export default {
     components: {
-      ticketDetail
+      ticketDetail,
+      ticketBuy
     }
 }
 </script>
